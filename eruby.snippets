@@ -1,0 +1,55 @@
+snippet % "<% %>" i
+<% $1 %>
+endsnippet
+
+snippet = "<%= %>" i
+<%= $1 %>
+endsnippet
+
+snippet lt "link_to"
+<%= link_to $1, $2 %>
+endsnippet
+
+snippet ltd "link_to ... do"
+<%= link_to $1 do %>
+  $2
+<% end %>
+endsnippet
+
+snippet if "if"
+<% if $1 %>
+  $2
+<% end %>
+endsnippet
+
+snippet ife "if-else"
+<% if $1 %>
+  $2
+<% else %>
+  $3
+<% end %>
+endsnippet
+
+snippet e "end"
+<% end %>
+endsnippet
+
+snippet .e "each" w
+<% $1.each do |$2| %>
+  $3
+<% end %>
+endsnippet
+
+snippet .t "times" w
+<% $1.times do |$2| %>
+  $3
+<% end %>
+endsnippet
+
+snippet jsit "javascript_include_tag" b
+<%= javascript_include_tag $1 %>
+endsnippet
+
+snippet slt "stylesheet_link_tag" b
+<%= stylesheet_link_tag $1 %>
+endsnippet
