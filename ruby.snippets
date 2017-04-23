@@ -1,12 +1,18 @@
 snippet cla "Class" b
 class ${1:name}
-  ${2:content}
+  ${2:body}
+end
+endsnippet
+
+snippet cla "Class from filename" b
+class `!p snip.rv += snip.basename.capitalize()`
+  ${1:body}
 end
 endsnippet
 
 snippet cla< "Class < Base" b
 class ${1:name} < ${2:base}
-  ${3:content}
+  ${3:body}
 end
 endsnippet
 
@@ -19,5 +25,17 @@ endsnippet
 snippet defa "def function(args)" b
 def ${1:function}(${2:args})
   ${3:body}
+end
+endsnippet
+
+snippet mod "module" b
+module ${1:name}
+  ${2:body}
+end
+endsnippet
+
+snippet mod "module from filename" b
+module `!p snip.rv += snip.basename.capitalize()`
+  ${1:body}
 end
 endsnippet
